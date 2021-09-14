@@ -499,7 +499,11 @@ ul li {
 
 .skills__name {
     font-size: var(--normal-font-size);
+    color: #FFF;
     font-weight: var(--font-medium);
+    background-color: var(--first-color);
+    border-radius: 1rem;
+    padding: 0.5rem;
 }
 
 .skills__bar,
@@ -904,9 +908,11 @@ ul li {
 }
 
 /*==================== CONTACT ME ====================*/
-.contact__container {
-    row-gap: 3rem;
-
+div.contact__container {
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contact__information {
@@ -1045,6 +1051,7 @@ ul li {
 ::-webkit-scrollbar-thumb:hover {
     background-color: var(--text-color-light);
 }
+
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
 @media screen and (max-width: 350px) {
@@ -1143,7 +1150,7 @@ ul li {
 }
 
 @media screen and (min-width: 768px) {
-    .container{
+    .container {
         margin-left: auto;
         margin-right: auto;
     }
@@ -1239,6 +1246,7 @@ ul li {
     .qualification__tabs {
         justify-content: center;
     }
+
     .qualification__button {
         margin: 0 var(--mb-1);
     }
@@ -1267,6 +1275,7 @@ ul li {
     .portfolio__img img {
         width: 320px;
     }
+
     .portfolio__content {
         align-items: center;
     }
@@ -1278,6 +1287,7 @@ ul li {
     .project__bg {
         background: none;
     }
+
     .project__container {
         background-color: var(--first-color-second);
         border-radius: 1rem;
@@ -1285,6 +1295,7 @@ ul li {
         grid-template-columns: 1fr max-content;
         column-gap: 3rem;
     }
+
     .project__data {
         padding-top: .8rem;
     }
@@ -1296,31 +1307,37 @@ ul li {
     .footer__bg {
         padding: 3rem 0 3.5rem;
     }
+
     .footer__links {
         flex-direction: row;
         column-gap: 2rem;
     }
+
     .footer__socials {
         justify-self: flex-end;
     }
-    
+
 }
 
 /* For large devices */
 
 @media screen and (min-width: 1024px) {
+
     .header,
     .main,
     .footer__container {
         padding: 0;
     }
+
     .home__blob {
         width: 320px;
     }
+
     .home__social {
         transform: translateX(-6rem);
         transition: .3s;
     }
+
     .services__container {
         grid-template-columns: repeat(3, 238px);
     }
@@ -1332,9 +1349,11 @@ ul li {
     .swiper-portfolio-icon {
         font-size: 3.5rem;
     }
+
     .swiper-button-prev {
         left: -3.5rem;
     }
+
     .swiper-button-next {
         right: -3.5rem;
     }
